@@ -81,6 +81,11 @@ public class OAuth2Authenticator {
     Properties props = new Properties();
     props.put("mail.imaps.sasl.enable", "true");
     props.put("mail.imaps.sasl.mechanisms", "XOAUTH2");
+    // https://javamail.java.net/nonav/docs/api/com/sun/mail/imap/package-summary.html
+    props.put("mail.imap.connectiontimeout", "60000");
+    props.put("mail.imap.timeout", "120000");
+    props.put("mail.imap.writetimeout", "120000");
+    
     props.put(OAuth2SaslClientFactory.OAUTH_TOKEN_PROP, oauthToken);
     Session session = Session.getInstance(props);
     session.setDebug(debug);

@@ -6,8 +6,8 @@
   <description>OAuth2 module for gmail</description>
 
   <properties>
-    <java.version>1.6</java.version>
-    <google-api.version>1.15.0-rc</google-api.version>
+    <java.version>1.7</java.version>
+    <google-api.version>1.21.0</google-api.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 

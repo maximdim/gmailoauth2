@@ -1,0 +1,20 @@
+# https://help.github.com/articles/dealing-with-line-endings/
+# http://adaptivepatchwork.com/2012/03/01/mind-the-end-of-your-line/
+#
+# To list files with CRLF:
+# find . -not -type d -exec file "{}" ";" | grep CRLF | grep -v target > 1.txt
+
+# The auto option seems to work reliably only for git version > 1.10
+# * text=auto
+
+# !!! DO NOT CHANGE THIS SETTING !!!
+# Enforce Unix line breaks for all text files
+# When more than one pattern matches the path, a later line overrides an earlier line
+# see https://git-scm.com/docs/gitattributes/2.11.1
+* text eol=lf
+
+*.pdf        binary
+*.png        binary
+*.xlsx       binary
+*.ttf        binary
+*.jks        binary

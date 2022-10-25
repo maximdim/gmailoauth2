@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.maximdim</groupId>
   <artifactId>gmailoauth2</artifactId>
-  <version>0.0.3-SNAPSHOT</version>
+  <version>0.0.4-SNAPSHOT</version>
   <description>OAuth2 module for gmail</description>
 
   <properties>
@@ -27,8 +27,8 @@
   <dependencies>
     <dependency>
       <groupId>com.sun.mail</groupId>
-      <artifactId>javax.mail</artifactId>
-      <version>1.6.2</version>
+      <artifactId>jakarta.mail</artifactId>
+      <version>1.6.7</version>
     </dependency>
     <dependency>
       <groupId>com.google.api-client</groupId>
